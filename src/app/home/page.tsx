@@ -5,11 +5,11 @@ export default function HomePage() { return (
   
 <> 
   
-<div className="bg-red-200 p-2.5 m-2.5 h-[80em]">
+<div className="p-2 h-[120vw] md:h-[80vw] lg:h-[45vw]  ">
 <NavBar/>
-  <h1>Nav</h1>
 
 <Hero/>
+<h1 className="h-96"></h1>
 </div>
   </> 
   ); }
