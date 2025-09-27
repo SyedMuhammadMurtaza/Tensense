@@ -17,8 +17,43 @@ export default function Hero() {
           
           {/*Buttons */}
           <div className="flex gap-6 mt-6">
-            <button className="text-white pt-4 pb-4 pl-10 pr-10 rounded-md border-2 border-[#B4E717]">See More</button>
-            <button className="text-white pt-4 pb-4 pl-10 pr-10 rounded-md border-2 border-[#B4E717]">See More</button>
+            <motion.button
+        initial="rest"
+        whileHover="hover"
+        animate="rest"
+        className="relative overflow-hidden text-white pt-4 pb-4 px-10 rounded-md border-2 border-[#B4E717]"
+      >
+        {/* Background slide */}
+        <motion.span
+          variants={{
+            rest: { x: "-100%" },
+            hover: { x: 0 },
+          }}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
+          className="absolute inset-0 bg-[#B4E717] z-0"
+        />
+        {/* Text on top */}
+        <span className="relative z-10">Our Services</span>
+      </motion.button>
+        <motion.button
+        initial="rest"
+        whileHover="hover"
+        animate="rest"
+        className="relative overflow-hidden text-white pt-4 pb-4 px-10 rounded-md border-2 border-[#B4E717]"
+      >
+        {/* Background slide */}
+        <motion.span
+          variants={{
+            rest: { x: "-100%" },
+            hover: { x: 0 },
+          }}
+          transition={{ duration: 0.4, ease: "easeInOut" }}
+          className="absolute inset-0 bg-[#B4E717] z-0"
+        />
+        {/* Text on top */}
+        <span className="relative z-10">View Projects</span>
+      </motion.button>
+
           </div>
           {/*Buttons End*/}
 
