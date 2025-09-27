@@ -25,9 +25,11 @@ export default function NavBar() {
         backgroundColor: scrolled ? "#B4E717" : "#1C4B42",
         position: scrolled ? "fixed" : "relative",
         color:scrolled ? "black" : "white",
+        borderTopLeftRadius:scrolled ? "0px" : "12px",
+        borderTopRightRadius:scrolled ? "0px" : "12px",
       }}
       transition={{ type: "spring", bounce: 0 }}
-      className="fixed top-0 left-0 w-full bg-[#1C4B42] rounded-t-lg z-50"
+      className="fixed top-0 left-0 w-full bg-[#1C4B42] z-50"
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between h-full px-4">
         {/* Logo */}
