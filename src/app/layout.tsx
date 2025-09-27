@@ -31,8 +31,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${workSans.variable} antialiased font-worksans`} >
+    <html lang="en" className={workSans.variable}>
+      <body  >
          {/* ${geistSans.variable} ${geistMono.variable} antialiased  */}
         {/* <NavBar/> */}
         {children}

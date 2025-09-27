@@ -5,7 +5,7 @@ export default function HomePage() { return (
   
 <> 
   
-<div className="p-2 h-[120vw] md:h-[80vw] lg:h-[45vw]  ">
+<div className="p-[2px] h-[120vw] md:h-[80vw] lg:h-[50vw]  ">
 <NavBar/>
 
 <Hero/>
